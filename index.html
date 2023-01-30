@@ -8,29 +8,39 @@
     <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-    <header>
-        <img src="./assets/logo.svg" id="head_image">
-    </header>
+    <div class="content-container">    
+        <header>
+            <img src="./assets/logo.svg">
+        </header>
 
-    <img src="./assets/read_news.jpg" id="background-img">
+        <main>
+            <section>
+                <h1>Atualize ideias e informações em 5 minutos.</h1>
+                <h2>tudo o que precisa saber para começar o dia bem informado</h2>
+                <p>noticias sobre o universo Rocketseat e tudo o que precisa para começar o dia melhor
+                    perfeito para se preparar e codar. <img src="./assets/coffee-cup.png">
+                </p>
+            
+                <form>
+                    <label for="email">Insira seu email:</label>
+                    <span class="input-row">
+                        <input type="email" id="email" name="email" placeholder="oi@rocketseat.com">
+                        <button id="button-submit" type="submit" name="buttonSubmit"><img src="./assets/send.svg"></button> 
+                    </span>
+                </form>
 
-    <main>
-        <section id="main-section">
-            <h1>Atualize ideias e informações em 5 minutos.</h1>
-            <h2>tudo o que precisa saber para começar o dia bem informado</h2>
-            <p>noticias sobre o universo Rocketseat e tudo o que precisa para começar o dia melhor.</br>
-                perfeito para se preparar e codar. <img src="./assets/coffee-cup.png">
-            </p>
-        
-            <form>
-                <label for="email">Insira seu email:</label></br>
-                <input type="email" id="email" name="email" placeholder="oi@rocketseat.com">
-                <button type="submit" name="buttonSubmit"><img src="./assets/send.svg"></button> 
-            </form>
+                <span id="spnletMeRead">
+                    <a href="https://www.rocketseat.com.br/" target="_blank">
+                        deixe-me ler primeiro 
+                        <img src="/assets/arrow-right.svg">
+                    </a> 
+                </span>
+            </section>    
+        </main>
+    </div>
+    
+    <div class="content-container" id="background-container"/>
 
-            <span id="spnletMeRead"><a href="https://www.rocketseat.com.br/" target="_blank">deixe-me ler primeiro -></a> </span>
-        </section>    
-    </main>
-  
+    <script src="./src/script.js"/>
 </body>
 </html>
